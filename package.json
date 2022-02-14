@@ -1,0 +1,28 @@
+{
+	"name": "@itcig/action-wait-for-k8s",
+	"version": "0.1.0",
+	"license": "MIT",
+	"description": "Workflow action to wait until a pod, service or job are ready to use in your Kubernetes cluster.",
+	"author": {
+		"name": "ITCIG",
+		"email": "it@capinfogroup.com"
+	},
+	"homepage": "https://github.com/itcig/action-wait-for-k8s#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itcig/action-wait-for-k8s.git"
+	},
+	"bugs": {
+		"url": "https://github.com/itcig/itcig/issues"
+	},
+	"keywords": [
+		"actions",
+		"workflows",
+		"kubernetes",
+		"wait"
+	],
+	"extra": {
+		"autotagger": true,
+		"mirror-repo": "itcig/action-wait-for-k8s"
+	}
+}

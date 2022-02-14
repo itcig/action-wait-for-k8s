@@ -1,0 +1,26 @@
+name: "Wait for k8s"
+description: "Wait until a pod, service or job are ready to use in your Kubernetes cluster."
+inputs:
+  namespace:
+    description: "The k8s namespace to wait for objects in."
+    required: false
+    default: "default"
+  kubectl_args:
+    description: "A valid kubectl command to retrieve a set of objects by name or label and wait for ready state."
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: "Read tool versions"
+      id: versions
+      shell: bash
+      env:
+        K8S_NAMESPACE: ${{ inputs.namespace }}
+        KUBECTL_ARGS: ${{ inputs.kubectl_args }}
+      run: |
+        $GITHUB_ACTION_PATH/wait-for.sh $KUBECTL_ARGS -n $K8S_NAMESPACE
+
+branding:
+  color: green
+  icon: watch
