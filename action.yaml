@@ -12,8 +12,8 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: "Read tool versions"
-      id: versions
+    - name: "Waiting for object ready"
+      id: wait-for
       shell: bash
       env:
         K8S_NAMESPACE: ${{ inputs.namespace }}
