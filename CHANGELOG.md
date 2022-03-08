@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 0.2.2 (2022-03-08)
+
+**Note:** Version bump only for package @itcig/action-wait-for-k8s
+
+
+
+
+
 ### [0.2.1](https://github.com/itcig/itcig/compare/@itcig/action-wait-for-k8s@0.2.0...@itcig/action-wait-for-k8s@0.2.1) (2022-02-23)
 
 **Note:** Version bump only for package @itcig/action-wait-for-k8s
